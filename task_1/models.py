@@ -1,5 +1,5 @@
 """
-Models for first task
+Модели для 1го задания
 """
 from django.db import models
 
