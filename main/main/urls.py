@@ -21,5 +21,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('level_up', include('level_up.urls')),
+    path('level_up/', include('level_up.urls')),
+    path('level_up_accounts/', include("django.contrib.auth.urls")),
 ]
