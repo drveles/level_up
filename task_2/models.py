@@ -1,15 +1,6 @@
-from django.db import models
-
-# Create your models here.
-
-
-from django.db import models
-
-
-class Boost(models.Model):
-    pass
-
-
+"""
+Stock models for second task
+"""
 from django.db import models
 
 
@@ -24,7 +15,6 @@ class Level(models.Model):
 
 class Prize(models.Model):
     title = models.CharField()
-    # id
 
 
 class PlayerLevel(models.Model):
@@ -39,4 +29,3 @@ class LevelPrize(models.Model):
     level = models.ForeignKey(Level, on_delete=models.CASCADE)
     prize = models.ForeignKey(Prize, on_delete=models.CASCADE)
     received = models.DateField()
-
