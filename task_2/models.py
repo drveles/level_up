@@ -1,5 +1,5 @@
 """
-Стоковые модели для 2 задания
+Stock models for task 2
 """
 from django.db import models
 

@@ -1,6 +1,15 @@
 """
-Реализация требуемых в 2 задании методов
+Task 2 functions
 """
+import os
+import datetime
+import django
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
+django.setup()
+
+from .models import Player, Level, Prize, PlayerLevel, LevelPrize
+
 
 def give_prize():
     # Присвоение игроку приза за прохождение уровня.
