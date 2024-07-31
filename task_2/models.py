@@ -14,7 +14,7 @@ class Level(models.Model):
 
 
 class Prize(models.Model):
-    title = models.CharField()
+    title = models.CharField(max_length=100)
 
 
 class PlayerLevel(models.Model):
