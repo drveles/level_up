@@ -19,8 +19,8 @@
 ## Как тестировать
 1. Склонировать репозиторий
 2. Создать виртуальное окружение с зависимостями из `requirements.txt`
-3. Выполнить `python3 manage.py migration`
-4. Запустить тесты `python3 ./task_1/test.py` и `python3 ./task_2/test.py`
+3. Выполнить `python3 manage.py migrate`
+4. Запустить тесты `python3 main_tests.py`
 
 ## Канбан доска 
 Я использовал [Github Pojects](https://github.com/users/drveles/projects/9/views/1) в качестве доски. Она похожа на Trello.

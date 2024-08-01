@@ -52,7 +52,7 @@ def grep_table(t_name="player"):
     """
     Print inputed table
     """
-    filename = "./../test.sqlite"
+    filename = "./test.sqlite"
     with sqlite3.connect(filename) as conn:
         cursor = conn.cursor()
         cursor.execute(f"SELECT * FROM task_2_{t_name}")
@@ -60,7 +60,10 @@ def grep_table(t_name="player"):
             print(row)
 
 
-if __name__ == "__main__":
+def task_2_tests():
+    """
+    Tests for 2 task
+    """
     try:
         obj = Player.objects.get(player_id="Test uuid")
     except Player.DoesNotExist:
@@ -73,3 +76,7 @@ if __name__ == "__main__":
     grep_table("prize")
     grep_table("playerlevel")
     grep_table("levelprize")
+
+
+if __name__ == "__main__":
+    task_2_tests()

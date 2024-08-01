@@ -14,4 +14,4 @@ DATABASES = {
     }
 }
 
-INSTALLED_APPS = ("task_1", "task_2" )
+INSTALLED_APPS = ("task_1", "task_2", )
