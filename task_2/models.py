@@ -1,6 +1,7 @@
 """
-Stock models for task 2
+Stock models for task 2. Not modified
 """
+
 from django.db import models
 
 

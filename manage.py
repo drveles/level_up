@@ -1,3 +1,7 @@
+"""
+File for using Django lib without Django apps
+"""
+
 import os
 import sys
 

@@ -1,10 +1,14 @@
 """
 Models for task 1
 """
+
 from django.db import models
 
 
 class Player(models.Model):
+    """
+    Player model for Django ORM
+    """
     id = models.BigAutoField(primary_key=True)
     nickname = models.CharField(max_length=100)
     first_login = models.DateField()
@@ -14,6 +18,9 @@ class Player(models.Model):
 
 
 class Boost(models.Model):
+    """
+    Boost model for Django ORM
+    """
     id = models.BigAutoField(primary_key=True)
     description = models.CharField(max_length=100)
     player_id = models.ForeignKey(Player, on_delete=models.CASCADE)
